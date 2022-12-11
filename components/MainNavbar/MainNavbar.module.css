@@ -1,0 +1,42 @@
+.main-nav {
+	display: flex;
+	outline: 1px solid red;
+	height: 85px;
+	max-height: 85px;
+	width: calc(100vw - 32px);
+	margin-inline: auto;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main-nav__list {
+	display: flex;
+	outline: 1px solid blue;
+	gap: 21px;
+	margin-block: auto;
+}
+.main-nav__list > li {
+	height: 100%;
+	width: 100%;
+}
+.main-nav__icon {
+	cursor: pointer;
+	height: 22px;
+	width: 22px;
+}
+
+.main-nav__icon:hover {
+	cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+	.mobile-only {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.desktop-only {
+		display: none;
+	}
+}
